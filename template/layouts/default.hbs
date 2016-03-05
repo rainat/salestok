@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <title></title> 
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Font Icon http://fortawesome.github.io/Font-Awesome/ -->
+  <link rel="stylesheet" href="{{assetscss}}/vendor/font-awesome.css">
+  <link rel="stylesheet" href="{{assetscss}}/vendor/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="{{assetscss}}/main.css">
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  <!--[if lt IE 8]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+  <![endif]-->
+   <script src="{{assetsjs}}/modernizr.min.js"></script>
+</head>
+<body>
+   <div id="nav-rwd-left" class="nav-rwd-sidebar">
+      <div class="close-sidebar">
+          <a href="javascript:void(0);" class="btn-hide">
+              <i class="fa fa-close"></i>
+          </a>
+      </div>
+      <ul></ul>
+  </div> <!-- //Responsive nav Space -->
+
+  <div class="wrapper">
+    <div class="wrapper-inner">
+        {{> header }}
+        {{> body }}
+        {{> footer }}
+        <!-- {{#inArray basenames basename}}
+            {{else}}
+        {{/inArray}} -->
+    </div><!-- wrapper-inner -->
+  </div><!-- / .wrapper -->
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery-ui/ui/core.js"></script>
+  <script src="bower_components/jquery-ui/ui/effect.js"></script>
+  <script src="bower_components/jquery-ui/ui/effect-bounce.js"></script>
+  <script src="{{assetsjs}}/libs.js"></script>
+  <script src="{{assetsjs}}/vendor.js"></script>
+  <script src="{{assetsjs}}/global.js"></script>
+  <script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>

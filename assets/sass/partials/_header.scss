@@ -1,0 +1,12 @@
+/** HEADER
+===================================*/
+#header{
+	background: #1b6097;
+	padding: 15px;
+	margin-bottom: 30px;
+	height: 40px;
+
+	@media screen and (min-width: 50em){
+		height: auto;
+	}
+}

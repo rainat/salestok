@@ -1,0 +1,51 @@
+/*==== CHECKBOX DAN RADIO ======*/
+
+.checkbox, .radio{
+	font-size: 13px;
+	label{
+		padding-left: 0;
+	}
+	input[type="checkbox"]{
+		margin-top: 7px;
+	}
+}
+
+
+input[type="checkbox"], input[type="radio"] {
+    display:none;
+}
+
+/*====== CHECKBOX ======*/
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:13px;
+    height:13px;
+    margin:-4px 7px 0 0;
+    vertical-align:middle;
+    background:image-url('checkbox.png') left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:image-url('checkbox.png') right top no-repeat;
+}
+
+/*====== RADIO ======*/
+input[type="radio"] + label span {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin: 3px 10px 0 0;
+    vertical-align:middle;
+    background:image-url('radio_fill.png') 0 0 no-repeat;
+    cursor:pointer;
+    float: left;
+    background-size: 15px auto;
+    -moz-background-size: 15px auto;
+    -webkit-background-size: 15px auto;
+}
+input[type="radio"]:checked + label span {
+    background:image-url('radio_empty.png') 0 0  no-repeat;
+    background-size: 15px auto;
+    -moz-background-size: 15px auto;
+    -webkit-background-size: 15px auto;
+}

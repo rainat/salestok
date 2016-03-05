@@ -1,0 +1,6 @@
+/** SIDEBAR
+===================================*/
+.sidebar{
+	@include make-sm-column(5);
+	@include make-md-column(4);
+}

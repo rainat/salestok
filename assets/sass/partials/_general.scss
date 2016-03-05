@@ -1,0 +1,96 @@
+body{
+	background: $body-bg;
+	font: $font-size $primary-font;
+	line-height: 1.3em;
+	color: $text-color;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;	
+}
+ul, li{
+	list-style:none;
+	padding:0;
+	margin:0;
+
+}
+#{headings()}{
+	font-weight:normal;
+	line-height:1.3em;		
+}
+
+*:focus, *:active{
+	outline: none;
+}
+
+a{
+	@include prefixed(transition, all 0.3s linear);
+}
+
+img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/** WRAPPER and For Responsive nav To work properly
+===================================*/
+.wrapper{
+	width: 100%;
+	position: relative;
+	@include clearfix();
+	.wrapper-inner{
+		transition: all 500ms cubic-bezier(0.25, 0.1, 0, 0.95);
+		position: relative;
+		width: 100%;
+		display: block;
+		margin-right: 0;
+	}
+	.mask-wrapper{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba( black, .15 );
+		z-index: -1;
+		opacity: 0;
+		transition: all 350ms ease;
+	}
+	.wrapper-active{
+		margin-right: -60%;
+		float: right;
+		.mask-wrapper{
+			opacity: 1;
+			z-index: 11;
+		}
+	}
+	.on-active-right{
+		.mask-wrapper{
+			opacity: 1;
+			z-index: 11;
+		}
+	}
+}
+
+/** SPACE
+===================================*/
+$spacer:
+	( space15, 15px),
+	( space20, 20px),
+	( space30, 30px),
+	( space45, 45px),
+	( space60, 60px);
+@each $space-name, $space-value in $spacer{
+	.#{$space-name}{
+		height: $space-value;
+		display: block;
+		width: 100%;
+	}
+}

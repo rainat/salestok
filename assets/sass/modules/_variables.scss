@@ -1,0 +1,116 @@
+
+/**
+ * Variables and Bootstrap overrides
+ */
+
+// Colors
+//...............
+$primary-color:          #71a866;
+$secondary-color:        #413c35;
+$tertiary-color:         #fe6e3a;
+$danger-color:           #d5525b;
+$info-color:             #668aa8;
+$default-color:          #f3f2eb;
+$dark-color:             #b1b0a7;
+$lighter-color:          #ffffff;
+$light-color:            #e5e5dc;
+$gray-dark:              #b3b3aa; //$text-color
+$footer-secondary-color: #4b463f;
+
+$banner-primary-color:   #6c8053;
+$banner-secondary-color: #6c8053;
+
+$body-bg:                #fff;
+$text-color:             $secondary-color;
+
+// Fonts
+//...............
+$primary-font:           "Open Sans", Helvetica, Arial, sans-serif;
+$secondary-font:         "Arvo", Georgia, Times, serif;
+$font-size:              13px;
+
+//fonts-type
+$font_thin:'';
+$font_light: '';
+$font_regular:'';
+$font_medium:'';
+$font_smbold:'';
+
+
+// Buttons
+//...............
+$buttons-transition:     background 0.1s linear;
+
+// Common placeholders
+//...............
+%background-primary-color {
+  background-color: $primary-color;
+}
+
+%color-primary-color {
+  color: $primary-color;
+}
+
+%background-secondary-color {
+  background-color: $secondary-color;
+}
+
+%color-secondary-color {
+  color: $secondary-color;
+}
+
+%background-tertiary-color {
+  background-color: $tertiary-color;
+}
+
+%color-tertiary-color {
+  color: $tertiary-color;
+}
+
+
+//SCREEN SIZE
+//Responsive
+$screen-phone 	: 330px !default;
+
+//SIZE
+$pixel 	: 	10px !default;
+$pixel_1: 	9px  !default;
+$pixel_2: 	8px  !default;
+$pixel_3: 	7px  !default;
+$pixel_4: 	6px  !default;
+$pixel_5: 	5px  !default;
+$pixel_6: 	4px  !default;
+$pixel_7: 	3px  !default;
+$pixel_8: 	2px  !default;
+$pixel_9: 	1px  !default;
+
+// Extra small screen / phone
+// Note: Deprecated $screen-xs and $screen-phone as of v3.0.1
+//$screen-xs:                  480px !default;
+//$screen-xs-min:              $screen-xs !default;
+//$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+// Note: Deprecated $screen-sm and $screen-tablet as of v3.0.1
+//$screen-sm:                  768px !default;
+//$screen-sm-min:              $screen-sm !default;
+//$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+// Note: Deprecated $screen-md and $screen-desktop as of v3.0.1
+//$screen-md:                  992px !default;
+//$screen-md-min:              $screen-md !default;
+//$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+// Note: Deprecated $screen-lg and $screen-lg-desktop as of v3.0.1
+//$screen-lg:                  1200px !default;
+//$screen-lg-min:              $screen-lg !default;
+//$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+//$screen-xs-max:              ($screen-sm-min - 1) !default;
+//$screen-sm-max:              ($screen-md-min - 1) !default;
+//$screen-md-max:              ($screen-lg-min - 1) !default;
+
+

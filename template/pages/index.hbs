@@ -1,0 +1,26 @@
+<div id="main" role="main" >
+	<div class="container">
+		<div class="blog-post">
+            {{#blogpost}}
+                <h1>{{title}}</h1>
+                <p class="lead">
+                    by <a href="#">{{lead}}</a>
+                </p><!-- //Author -->
+                <hr>
+                <!-- Date/Time -->
+                <p>{{posting}}</p>
+                <hr>
+                <figure><img src="" alt=""></figure>
+                <hr>
+                <div class="content-text">
+                    <p>{{{desc}}}</p>
+
+                </div>
+                <hr>
+            {{/blogpost}}
+        </div>
+
+       {{> sidebar}}
+   	</div>
+</div> <!-- //MAIN -->
+  

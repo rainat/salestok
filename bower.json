@@ -1,0 +1,11 @@
+{
+  "name": "app-rainat",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~2.2.1",
+    "jquery-ui": "~1.11.4"
+    //"modernizr": "~2.6.2",
+    //"sass-bootstrap": "~3.0.0"
+  },
+  "private": true
+}

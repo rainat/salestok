@@ -1,0 +1,6 @@
+/** TABS
+===================================*/
+.blog-post{
+	@include make-sm-column(7);
+	@include make-md-column(8);
+}
